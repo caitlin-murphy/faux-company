@@ -3,3 +3,67 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/* universal styles */
+/*css reset chris coyier*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*clearfix paul irish*/
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/*global styles*/
+.centerme {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+/*page styles*/
+h1 {
+  text-align: center;
+  padding-top: 10%;
+}
+h1 .company-heading {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-size: 300%;
+  margin-bottom: 100px;
+  color: #ff6800;
+}
+h1 .creations-head {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-size: 250%;
+  letter-spacing: 5px;
+}
+
+.home {
+  background: linear-gradient(to bottom, rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.9)), url("../img/tennis-ball.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}

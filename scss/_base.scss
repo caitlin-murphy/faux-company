@@ -1,29 +1,145 @@
-h1{
-	.company-heading{
-		font-family: $font-pawfessional;
-		font-weight: 400;
-		letter-spacing: 20px;
-		text-transform: uppercase;
-		font-size: 300%;
-		margin-bottom: 100px;
-		color: $orange;
-	}//.compnay-heading
-	.creations-head{
-		font-family: $font-creations;
-		font-size: 250%;
-		letter-spacing: 5px;
-	}//creations-head
-	text-align: center;
-	padding-top: 10%;
-}
+// INDEX PAGE
 
-// body{
-// 	background-color: $trans-grey;
-// 	background: url("http://placehold.it/1000x960") no-repeat center center fixed;
-// 	background-size: cover;
-// }
+body{
+	header{
+		text-align: center;
+		.main-logo{
+			margin: 10%;
+		}//img
+	}//h1
+}//.home
 
-.home{
-	@include back-img('../img/tennis-ball.jpg');
+	main{
+	.go-fetch{
+			text-decoration: none;
+			color: gray;
+			text-transform: uppercase;
+			font-family: $font-pawfessional;
+			border: 1px solid gray;
+			padding: 10px;
+			letter-spacing: 8px;
+			font-size: 110%;
+			text-align: center;
+			width: 18%;
+			display: block;
+			margin: 0 auto;
+		}//.go-fetch
+	.go-fetch:hover{
+				background-color: rgba(242, 101, 24, 0.8);
+				color: white;
+				border: none;
+				padding: -3px;
 	}
 
+	margin: 0 auto;
+}//main
+
+
+//END INDEX PAGE
+
+//MAIN PAGE
+
+body{
+	background-color: rgb(255, 242, 230);
+	h1{
+		margin-bottom: 0;
+		padding-top: 10%;
+		padding-bottom: 0;
+	}
+	h2 img{
+		width: 60%;
+		margin-bottom: 10%;
+		
+	}//h2
+}
+
+nav{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+  	position: fixed;
+  	padding: 10px;
+  	font-size: 110%;
+  	color: rgba(75, 75, 75, 1);
+  	a{
+  	text-decoration: none;
+	font-family: $font-pawfessional;
+	margin: 0 auto;
+	font-weight: 300;
+	padding: 20px;
+  	}//a
+  	a:hover{
+  		font-weight: 700;
+  	}
+  	a:visited{
+  		color: rgba(75, 75, 75, 1);
+  	}
+
+}
+
+
+nav.sticky {
+  font-size: 100%;
+  line-height: 48px;
+  margin: 0 auto;
+  text-align: right;
+  height: 48px;
+  background: rgba(50, 50, 50, 0.7);
+  border: none;
+  padding-left: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  a{
+  	color: white;
+  }//a
+  a:visited{
+  		color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+main{
+	section{
+		margin: 0 auto;
+	}
+	.about{
+		background-color: rgb(0, 153, 153);
+		@include clearfixed;
+		ul{
+			list-style: none;
+			@include container(960px);
+		}
+		li{
+			@include gallery(4);
+		}//p
+	}//about
+	.products{
+		background-color: yellow;
+		@include clearfixed;
+		ul{
+			text-align: center;
+			@include container(960px);
+			list-style: none;
+		}
+		li{
+			@include gallery(4);
+		}
+
+	}//products
+	.humans{
+		background-color: red;
+		@include clearfixed;
+		ul{
+			text-align: center;
+			@include container(960px);
+			list-style: none;
+		}
+		li{
+			@include gallery(4);
+		}
+
+	}//humans
+}
+
+
+//END MAIN PAGE

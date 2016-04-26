@@ -143,3 +143,12 @@ main{
 
 
 //END MAIN PAGE
+
+//MEDIA QUERIES
+
+
+@include susy-breakpoint($medium){
+}//medium breakpoint
+
+@include susy-breakpoint($small){
+}//small breakpoint

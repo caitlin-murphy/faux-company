@@ -1,12 +1,11 @@
-@mixin back-img($tennisb-img, $height: 100vh){
+@mixin back-img($bg-img, $height: 100vh){
 	background: linear-gradient(to bottom, 
-		rgba(50, 50, 50, 1),
-		rgba(50, 50, 50, .5)),
-		url($tennisb-img);
-	background-repeat: no-repeat; 
-	background-position: center center; 
-	background-size: cover; 
+		rgba(255, 242, 230, .2),
+		rgba(255, 242, 230, 0.8)),
+		url($bg-img) no-repeat fixed bottom right;
+	background-size: 100%; 
 	height: $height;
+
 }
 
 @mixin clearfixed(){ //mixin
